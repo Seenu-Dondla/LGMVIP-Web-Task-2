@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="calc.js" defer></script>
+    <link rel="stylesheet" href="calc.css">
+    <title>Simple Calculator</title>
+</head>
+<body style="background-color: rgb(120, 255, 255);">
+    <div><h1><br><br><br></h1></div>
+    <div class="calculator">
+    <h1>Simple Calculator</h1>
+    <div class="result-container">
+      <input type="text" id="result" class="result" readonly>
+      <input type="button" value="Clear" id="clear-button" onclick="clearResult()">
+    </div>
+    <div class="btn-container">
+      <input type="button" value="1" onclick="appendValue(1)">
+      <input type="button" value="2" onclick="appendValue(2)">
+      <input type="button" value="3" onclick="appendValue(3)">
+      <input type="button" value="+" onclick="appendValue('+')">
+      <input type="button" value="4" onclick="appendValue(4)">
+      <input type="button" value="5" onclick="appendValue(5)">
+      <input type="button" value="6" onclick="appendValue(6)">
+      <input type="button" value="-" onclick="appendValue('-')">
+      <input type="button" value="7" onclick="appendValue(7)">
+      <input type="button" value="8" onclick="appendValue(8)">
+      <input type="button" value="9" onclick="appendValue(9)">
+      <input type="button" value="*" onclick="appendValue('*')">
+      <input type="button" value="0" onclick="appendValue(0)">
+      <input type="button" value="." onclick="appendValue('.')">
+      <input type="button" value="=" onclick="calculate()">
+      <input type="button" value="/" onclick="appendValue('/')">
+    </div>
+  </div>
+</body>
+</html>
